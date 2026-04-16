@@ -34,6 +34,7 @@ Event Handling: The **showMessage()** function prevents default link behavior an
 ⚙️ **2. Detailed Component Logic**
 
 Navigation System
+
 The navbar stays at the top of the viewport using position: fixed. 
 The CSS property scroll-behavior: smooth in the * selector ensures that when a user clicks a nav link, the browser slides gracefully to the corresponding section ID instead of jumping.
 
@@ -45,8 +46,10 @@ code JavaScript
 
 function opentab(tabname){
      // 1. Hide all tab content and remove underline from links
+     
       for (let tablink of tablinks){ tablink.classList.remove("active-link"); 
         }
+        
     for (let tabcontent of tabcontents){ tabcontent.classList.remove("active-tab"); 
     }
 }
@@ -62,12 +65,18 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 This logic tells the browser: "Create as many columns as possible that are at least 300px wide. If there isn't enough room, wrap them to the next line." This makes the site mobile-responsive without requiring dozens of media queries.
 
 🚀 3. **Integration & Setup**
+
 To modify or extend this code:
+
 Adding a Skill: Simply add a new <li> inside the #skills div in the HTML.
+
 Changing Theme Colors: Replace the hex codes in the CSS file.
+
 Updating Projects: Copy/Paste a .project-card div; the CSS Grid will automatically position it correctly.
 
 
 🛠️ **Dependencies**
+
 FontAwesome: Loaded via a <script> tag to render the social and technical icons.
+
 Google Fonts: Imported via <link> to load 'Inter' and 'Poppins'.
