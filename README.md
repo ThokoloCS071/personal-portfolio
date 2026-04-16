@@ -1,7 +1,7 @@
 # personal-portfolio
 **Modern Personal Portfolio** 🚀
 
-** Portfolio Architecture**
+**Portfolio Architecture**
 
 This project is a static web application built using a clean separation of concerns: HTML5 for structure, CSS3 for styling and animations, and JavaScript for DOM manipulation and interactivity.
 
@@ -14,7 +14,7 @@ Navigation: Uses a <nav> bar with a fixed position.
 Sectioning: The page is divided into section blocks (#home, #about, #projects, #contact), each identified by an ID to enable Smooth Scroll navigation.
 Data Display: Uses unordered lists (<ul>) within the "About" section to categorize skills and education.
 
-**CSS **
+**CSS**
 
 The portfolio.css file handles the visual logic:
 Layout: Utilizes CSS Flexbox for the header and contact sections, and CSS Grid for the Projects section to ensure a responsive, card-based layout.
