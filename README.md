@@ -1,7 +1,9 @@
 # personal-portfolio
 **Modern Personal Portfolio** 🚀
-                                          ** Portfolio Architecture**
-This project is a static web application built using a clean separation of concerns: HTML5 for structure, CSS3 for styling and animations, and JavaScript (ES6) for DOM manipulation and interactivity.
+
+** Portfolio Architecture**
+
+This project is a static web application built using a clean separation of concerns: HTML5 for structure, CSS3 for styling and animations, and JavaScript for DOM manipulation and interactivity.
 
 🏗️ **1. Architecture Overview**
 
@@ -36,21 +38,27 @@ The navbar stays at the top of the viewport using position: fixed.
 The CSS property scroll-behavior: smooth in the * selector ensures that when a user clicks a nav link, the browser slides gracefully to the corresponding section ID instead of jumping.
 
 **The "About" Tabs code**
-**JavaScript**
+
+code JavaScript
 
 // How the tab switching works:
+
 function opentab(tabname){
-    // 1. Hide all tab content and remove underline from links
-    for (let tablink of tablinks){ tablink.classList.remove("active-link"); }
-    for (let tabcontent of tabcontents){ tabcontent.classList.remove("active-tab"); }
+     // 1. Hide all tab content and remove underline from links
+      for (let tablink of tablinks){ tablink.classList.remove("active-link"); 
+        }
+    for (let tabcontent of tabcontents){ tabcontent.classList.remove("active-tab"); 
+    }
 }
 
 **Responsive Grid**
 
 The Project section uses an "auto-fit" approach:
-code
-CSS
+
+code CSS
+
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
 This logic tells the browser: "Create as many columns as possible that are at least 300px wide. If there isn't enough room, wrap them to the next line." This makes the site mobile-responsive without requiring dozens of media queries.
 
 🚀 3. **Integration & Setup**
