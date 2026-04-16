@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thokolo Chuene | Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="portfolio.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fe60c7e857.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-c"></i>
+                <span class="logo-text">Thok-SC</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HEADER / HOME -->
+    <section id="home">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <p>Junior Software Developer</p>
+                    <h1>Hi, I'm <span>Simon</span></h1>
+                    <h2>Pursuing a degree in Computer Science and Mathematics. A 20-year-old student specializing in software development and data science. Passionate about building projects that solve real-world problems.</h2>
+                    
+                    <div class="header-btns">
+                        <a href="#projects" class="btn">My Projects</a>
+                        <div class="header-socials">
+                            <a href="https://www.linkedin.com/in/mr-t-tlhompho-451b2137b"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/CSThokolo"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-img">
+                    <img src="images/02aa78b7-1450-49be-85b3-de8971dfd279.png" alt="Simon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/fdfdb2f6-9e01-4134-9bf0-eea8690c3cb9.png" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate learner in the field of software development with knowledge of building web applications using modern technologies. I focus on both front and back-end development and have a strong interest in creating user-friendly interfaces.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Design</span><br>Visual storytelling through branding</li>
+                            <li><span>HTML / CSS / javascript</span><br>Building responsive websites</li>
+                            <li><span>Java</span><br>Scalable and secure applications</li>
+                            <li><span>Python</span><br>Data analysis applications</li>
+                            <li><span>C++</span><br>Building efficient and robust applications</li>
+                            <li><span>SQL</span><br>Database design and management</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>No Experience Yet</span><br>Looking forward to gaining experience in software development and data analysis.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Present</span><br>BSc Computer Science & Mathematics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project-card">
+                    <i class="fa-solid fa-gears"></i>
+                    <h2>School Management System</h2>
+                    <p>Comprehensive system for managing school operations using Java.</p>
+                    <a href="#" onclick="showMessage(event)">Learn more</a>
+                </div>
+                <div class="project-card">
+                    <i class="fa-solid fa-calculator"></i>
+                    <h2>online Calculator</h2>
+                    <p>For performing complex arithmetic operations.<br>Used html,css and javascript</p>
+                    <a href="#" onclick="showMessage(event)">Learn more</a>
+                </div>
+                <div class="project-card">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Number Guessing Game</h2>
+                    <p>Interactive game built with Java focusing on logic and user input handling.</p>
+                    <a href="#" onclick="showMessage(event)">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> choenete@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +27 73 456 7890</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/thokolo-chuene-7b5b5b1b3/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/CSThokolo"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Thokolo Chuene | Portfolio</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
